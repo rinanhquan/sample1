@@ -1,0 +1,105 @@
+/* if the viewport is equal to 600px or less than that */
+@media only screen and (max-width: 600px){
+    #header_area .main-menu .navbar,
+    #header_area .main-menu .navbar .navbar-brand,
+    .site-main #subscribe-us-area .subscribe .subscribe-title,
+    .site-main #subscribe-us-area .subscribe .subscribe-title p, h4,
+    .site-main #services-area
+    
+    {
+        padding: 2%;
+        margin: 0;
+    }
+
+    .site-main #subscribe-us-area .subscribe {
+        padding: 9%;
+    }
+    
+    .site-main .site-banner .site-title h1 {
+        font-size: 40px;
+    }
+
+
+    .site-main #subscribe-us-area .subscribe form .input-textbox input{
+        width: 110%!important;   
+    }    
+}
+
+/* if the viewport is equal to 991px or less than that */
+@media only screen and (max-width: 991px){
+    .site-main #about-area .about-title {
+        text-align: center;
+    }
+
+    .site-main #about-area {
+        padding: 0;
+    }
+    .site-main #artwork-area .artwork-buttons button{  
+        margin-top: 10px;
+    }   
+    .site-main #subscribe-us-area .container{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    
+    
+    
+}
+
+/* if the viewport is equal to 1330px or less than that */
+@media only screen and (max-width: 1330px){
+   
+    
+    #header_area .main-menu .navbar .navbar-nav {
+        padding-right: 2rem;
+       
+    }
+    
+    
+    .site-main #about-area .paragraph {
+        width: 100%!important;
+    }
+    .site-main #about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    
+    }
+
+    .site-main #about-area .about-title p{
+        padding: 0%;
+    }
+
+    .site-main > #services-area .services,
+    .site-main > #blog-area .blog-list .blog-card {
+        width: 100%;
+        height: 80%;
+    }
+    
+}
+
+/* if the viewport is equal to 1910px or less than that */
+@media only screen and (max-width: 1910px){
+    #header-area .main-menu .navbar {
+        padding: 1rem;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .site-main #about-area{
+        padding-top: 10rem;
+    }
+    .site-main #services-area .services-title,
+    .site-main #portfolio-area
+    {
+        padding: 2% 4%;
+    }
+
+    .site-main #about-area .about-image {
+        text-align: center;
+    }
+
+    
+}

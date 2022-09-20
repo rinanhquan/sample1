@@ -1,0 +1,409 @@
+
+/*import fonts from fonts.css*/
+@import 'fonts.scss';
+
+/*css variables*/
+@import 'partials/variables';
+
+/*global*/
+@import 'partials/global';
+
+
+/* start navigation */
+
+
+#header_area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+    
+}
+
+
+
+#header_area .main-menu .navbar .navbar-nav {
+    padding-right: 10rem;
+   
+}
+
+#header_area .main-menu .nav-item .nav-link {
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.2rem;
+    color: var(--title-color);
+}
+
+#header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* end navigation */
+
+/* Banner area */
+
+.site-main .site-banner {
+    
+    padding: 3rem 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    text-align: center;
+    animation: slide 70s ease infinite; 
+    
+}
+
+@keyframes slide{
+    
+    0%{
+        background-image: url('/img/banner.jpg');
+    }
+    20%{
+        background-image: url('/img/banner2.jpg');
+    }
+    40%{
+        background-image: url('/img/banner3.jpg');
+    }
+    60%{
+        background-image: url('/img/banner4.jpg');
+    }
+    80%{
+        background-image: url('/img/banner6.jpg');
+    }
+    100%{
+        background-image: url('/img/banner.jpg');
+    }
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 18%;
+    font-weight: 500;
+   
+}
+
+
+
+.site-main .site-banner .site-title h1{
+    font-size: 4.5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;    
+}
+
+
+/* End Banner area */ 
+
+/* Start About area */
+
+.site-main #about-area{
+    padding: 7rem 5rem;
+}
+
+.site-main #about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--montserrat);
+    letter-spacing: 21px;
+}
+
+.site-main #about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+
+
+/* End About area */
+
+
+/* Portfolio Carousel area */
+
+.pt-lg-5, .py-lg-5 {
+    padding-top: 0rem!important;
+    padding-bottom: 0rem!important;
+}
+
+.site-main #artwork-area {
+    place-items: center;
+    text-align: center;
+    padding: 7rem 2rem 7rem 2rem;
+}
+
+.site-main #artwork-area .artwork-title h1{
+    color: var(--primary-color2);
+    font-size: 35px;
+}
+
+
+.site-main #artwork-area .cards{
+    margin: 1rem;   
+}
+
+.site-main #artwork-area .cards-img{
+    padding: 0rem 2rem;
+        
+}
+
+.site-main #artwork-area .cards-img img{
+    border-radius: 10px;
+    
+    
+}
+
+.site-main #artwork-area .owl-carousel .owl-dots .owl-dot span {
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    transition: background ease .3s;
+}
+.site-main #artwork-area .owl-carousel .owl-dots .owl-dot span:hover {
+    background-color: var(--primary-color2);
+    opacity: 1;
+}
+
+.site-main #artwork-area .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: var(--primary-color2);
+    opacity: 1;
+    width: 23px;
+    height: 13px;
+    transition: background ease .3s;
+}
+
+.site-main #artwork-area .artwork-buttons button{
+    margin: 10px 10px;
+    
+}
+
+/* End Portfolio Carousel area */
+
+
+/* Services area */
+
+.site-main #services-area {
+    padding: 7rem 2rem 7rem 2rem;
+    background-image: url('/img/daniel-mccullough-HtBlQdxfG9k-unsplash.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+.site-main #services-area .services-title{
+    padding: 0 14rem;
+}
+
+.site-main #services-area .services-title h1{
+    font-size: 40px;
+    color: white;
+}
+
+.site-main #services-area .services-title p {
+    color: white;
+}
+
+
+.site-main > #services-area .services{
+    background: rgba(248,252,253,0.8);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 3rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main #services-area .services-list a {
+    color: black;
+}
+
+.site-main #services-area .services-list a:hover{
+    text-decoration: none;
+    
+}
+
+.site-main > #services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+/* End Services area */
+
+/* Blog Area */
+
+.site-main #blog-area {
+    padding: 7rem 0rem;
+} 
+
+.site-main #blog-area .blog-title{
+    text-align: center;
+
+}
+.site-main #blog-area .blog-title h1 {
+    font-size: 40px;
+    color: var(--primary-color2);
+}
+
+.site-main #blog-area .blog-list {
+    padding: 10px;
+}
+
+.site-main #blog-area .blog-list .blog-card {
+    width: 16rem;
+    margin: 10px 0;
+    transition: box-shadow .7s ease;
+}
+
+.site-main #blog-area .blog-list .blog-card:hover {
+    box-shadow: var(--box-shadow);
+    
+    
+}
+
+.site-main #blog-area .blog-list img{
+    padding: 20px 0;
+    border-radius: 0;
+    border: 0;
+}
+
+.site-main #blog-area .blog-list .news-content{
+    padding-bottom: 20px ;
+}
+
+.site-main #blog-area .blog-list .news-content .date{
+    font-family: var(--montserrat);
+    
+}
+
+.site-main #blog-area .blog-list .news-content h5{
+    font-family: var(--montserrat);
+    font-weight: bold;
+    color: var(--primary-color2);
+}
+.site-main #blog-area .blog-list .news-content a{
+    color: var(--primary-color2);
+}
+
+.site-main #blog-area .blog-list .news-content a:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.site-main #blog-area .blog-link {
+    float: right;
+    margin-right: 4rem;
+
+}
+
+.site-main #blog-area .blog-link a {
+    color: var(--primary-color);
+}
+
+.site-main #blog-area .blog-link a:hover {
+    text-decoration: none;
+    color: var(--primary-color2);
+} 
+/*  End Blog Area */
+
+/* Subscribe Area */
+.site-main #subscribe-us-area{
+    padding: 5rem 0;
+}
+.site-main #subscribe-us-area .subscribe{
+    background: linear-gradient(45deg, #003F80, #0058B3, #23A6D5, #23D5AB);
+    padding: 10rem 0;
+    position: relative;
+    animation: change 6.5s ease-in-out infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.site-main #subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/30px var(--montserrat);
+    color: whitesmoke;
+}
+
+.site-main #subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.site-main #subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px var(--montserrat);
+}
+.site-main #subscribe-us-area .subscribe form .input-textbox input:hover{
+    box-shadow: var(--box-shadow);
+
+}
+.site-main #subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.site-main #subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: var(--primary-color2);
+    padding: .7rem 2rem; 
+    float: right;
+    border: none;
+    transition: .5s ease;
+}
+
+.site-main #subscribe-us-area .subscribe form .btn-submit button:hover{
+    box-shadow: var(--box-shadow);
+    color: var(--primary-color);
+    
+}
+
+
+/* End Subscribe Area */
+
+/* Footer Area */
+
+footer#footer-area{
+    padding: 5rem 0;
+    animation: slide 40s ease infinite;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    color: whitesmoke;
+}
+
+footer#footer-area .social h5{
+    font: normal 500 23px/30px var(--montserrat);
+    
+}
+footer#footer-area .social a> i{
+    font-size: 25px;
+    padding: 2rem;
+    color: whitesmoke;
+    transition: color .3s;
+}
+
+footer#footer-area .social a:hover> i{
+    color: var(--primary-color);
+    
+}
+
+footer#footer-area .copyright .para {
+    color: whitesmoke;
+}
+/* End Footer Area */

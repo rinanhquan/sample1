@@ -1,0 +1,560 @@
+/*import fonts from fonts.css*/
+/* @font-face */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+/*css variables*/
+html, body {
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #00A6D7;
+  --primary-color2: #0058B3;
+  --title-color: #141313;
+  --text-color: #777777;
+  --border-color: #201f1f17;
+  --gradient-color: linear-gradient(90deg, #0058B3 0%, #00A6D7 100%);
+  --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+  --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+  /* font family variables */
+  --montserrat: 'Montserrat',cursive;
+}
+
+/*global*/
+/*global classes*/
+.title-text {
+  font: normal bold 50px/62px var(--montserrat);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/*buttons*/
+.button {
+  padding: .8rem 2.2rem;
+  font: normal 500 16px/20px var(--montserrat);
+  position: relative;
+  border: none;
+  border-radius: 4px;
+}
+
+.button.primary-button {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: var(--primary-color);
+}
+
+.button.primary-button::after, .button.secondary-button::after {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  background: var(--gradient-color);
+  content: ' ';
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.button.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  -webkit-transition: color .6s ease;
+  transition: color .6s ease;
+  color: var(--primary-color);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.button.secondary-button:hover {
+  background: var(--gradient-color);
+  color: whitesmoke;
+  background-clip: padding-box;
+}
+
+p.para {
+  color: var(--text-color);
+  font: normal 500 16px/25px var(--montserrat);
+}
+
+.font-montserrat {
+  font-family: var(--montserrat);
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  z-index: 1000;
+  -webkit-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+/* Custom scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 192, 192, 0.8);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.8);
+}
+
+/* start navigation */
+#header_area .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+#header_area .main-menu .navbar .navbar-nav {
+  padding-right: 10rem;
+}
+
+#header_area .main-menu .nav-item .nav-link {
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1.2rem;
+  color: var(--title-color);
+}
+
+#header_area .main-menu .navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#header_area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* end navigation */
+/* Banner area */
+.site-main .site-banner {
+  padding: 3rem 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  text-align: center;
+  -webkit-animation: slide 70s ease infinite;
+          animation: slide 70s ease infinite;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-image: url("/img/banner.jpg");
+  }
+  20% {
+    background-image: url("/img/banner2.jpg");
+  }
+  40% {
+    background-image: url("/img/banner3.jpg");
+  }
+  60% {
+    background-image: url("/img/banner4.jpg");
+  }
+  80% {
+    background-image: url("/img/banner6.jpg");
+  }
+  100% {
+    background-image: url("/img/banner.jpg");
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("/img/banner.jpg");
+  }
+  20% {
+    background-image: url("/img/banner2.jpg");
+  }
+  40% {
+    background-image: url("/img/banner3.jpg");
+  }
+  60% {
+    background-image: url("/img/banner4.jpg");
+  }
+  80% {
+    background-image: url("/img/banner6.jpg");
+  }
+  100% {
+    background-image: url("/img/banner.jpg");
+  }
+}
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 18%;
+  font-weight: 500;
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 4.5rem;
+}
+
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+}
+
+/* End Banner area */
+/* Start About area */
+.site-main #about-area {
+  padding: 7rem 5rem;
+}
+
+.site-main #about-area .about-title h2 > span {
+  display: block;
+  font: normal bold 49px/60px var(--montserrat);
+  letter-spacing: 21px;
+}
+
+.site-main #about-area .about-title .paragraph > p {
+  padding: .4rem 0;
+}
+
+/* End About area */
+/* Portfolio Carousel area */
+.pt-lg-5, .py-lg-5 {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.site-main #artwork-area {
+  place-items: center;
+  text-align: center;
+  padding: 7rem 2rem 7rem 2rem;
+}
+
+.site-main #artwork-area .artwork-title h1 {
+  color: var(--primary-color2);
+  font-size: 35px;
+}
+
+.site-main #artwork-area .cards {
+  margin: 1rem;
+}
+
+.site-main #artwork-area .cards-img {
+  padding: 0rem 2rem;
+}
+
+.site-main #artwork-area .cards-img img {
+  border-radius: 10px;
+}
+
+.site-main #artwork-area .owl-carousel .owl-dots .owl-dot span {
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  -webkit-transition: background ease .3s;
+  transition: background ease .3s;
+}
+
+.site-main #artwork-area .owl-carousel .owl-dots .owl-dot span:hover {
+  background-color: var(--primary-color2);
+  opacity: 1;
+}
+
+.site-main #artwork-area .owl-carousel .owl-dots .owl-dot.active span {
+  background-color: var(--primary-color2);
+  opacity: 1;
+  width: 23px;
+  height: 13px;
+  -webkit-transition: background ease .3s;
+  transition: background ease .3s;
+}
+
+.site-main #artwork-area .artwork-buttons button {
+  margin: 10px 10px;
+}
+
+/* End Portfolio Carousel area */
+/* Services area */
+.site-main #services-area {
+  padding: 7rem 2rem 7rem 2rem;
+  background-image: url("/img/daniel-mccullough-HtBlQdxfG9k-unsplash.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.site-main #services-area .services-title {
+  padding: 0 14rem;
+}
+
+.site-main #services-area .services-title h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.site-main #services-area .services-title p {
+  color: white;
+}
+
+.site-main > #services-area .services {
+  background: rgba(248, 252, 253, 0.8);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 3rem .5rem;
+  -webkit-transition: -webkit-box-shadow .7s ease;
+  transition: -webkit-box-shadow .7s ease;
+  transition: box-shadow .7s ease;
+  transition: box-shadow .7s ease, -webkit-box-shadow .7s ease;
+}
+
+.site-main #services-area .services-list a {
+  color: black;
+}
+
+.site-main #services-area .services-list a:hover {
+  text-decoration: none;
+}
+
+.site-main > #services-area .services:hover {
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+/* End Services area */
+/* Blog Area */
+.site-main #blog-area {
+  padding: 7rem 0rem;
+}
+
+.site-main #blog-area .blog-title {
+  text-align: center;
+}
+
+.site-main #blog-area .blog-title h1 {
+  font-size: 40px;
+  color: var(--primary-color2);
+}
+
+.site-main #blog-area .blog-list {
+  padding: 10px;
+}
+
+.site-main #blog-area .blog-list .blog-card {
+  width: 16rem;
+  margin: 10px 0;
+  -webkit-transition: -webkit-box-shadow .7s ease;
+  transition: -webkit-box-shadow .7s ease;
+  transition: box-shadow .7s ease;
+  transition: box-shadow .7s ease, -webkit-box-shadow .7s ease;
+}
+
+.site-main #blog-area .blog-list .blog-card:hover {
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.site-main #blog-area .blog-list img {
+  padding: 20px 0;
+  border-radius: 0;
+  border: 0;
+}
+
+.site-main #blog-area .blog-list .news-content {
+  padding-bottom: 20px;
+}
+
+.site-main #blog-area .blog-list .news-content .date {
+  font-family: var(--montserrat);
+}
+
+.site-main #blog-area .blog-list .news-content h5 {
+  font-family: var(--montserrat);
+  font-weight: bold;
+  color: var(--primary-color2);
+}
+
+.site-main #blog-area .blog-list .news-content a {
+  color: var(--primary-color2);
+}
+
+.site-main #blog-area .blog-list .news-content a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.site-main #blog-area .blog-link {
+  float: right;
+  margin-right: 4rem;
+}
+
+.site-main #blog-area .blog-link a {
+  color: var(--primary-color);
+}
+
+.site-main #blog-area .blog-link a:hover {
+  text-decoration: none;
+  color: var(--primary-color2);
+}
+
+/*  End Blog Area */
+/* Subscribe Area */
+.site-main #subscribe-us-area {
+  padding: 5rem 0;
+}
+
+.site-main #subscribe-us-area .subscribe {
+  background: linear-gradient(45deg, #003F80, #0058B3, #23A6D5, #23D5AB);
+  padding: 10rem 0;
+  position: relative;
+  -webkit-animation: change 6.5s ease-in-out infinite;
+          animation: change 6.5s ease-in-out infinite;
+  background-size: 400% 400%;
+}
+
+@-webkit-keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.site-main #subscribe-us-area .subscribe .subscribe-title h4 {
+  font: normal 700 30px/30px var(--montserrat);
+  color: whitesmoke;
+}
+
+.site-main #subscribe-us-area .subscribe .subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+
+.site-main #subscribe-us-area .subscribe form .input-textbox input {
+  width: 400px;
+  padding: 1.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: white;
+  font: normal 500 17px/20px var(--montserrat);
+}
+
+.site-main #subscribe-us-area .subscribe form .input-textbox input:hover {
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.site-main #subscribe-us-area .subscribe form .input-textbox input::-webkit-input-placeholder {
+  color: whitesmoke;
+}
+
+.site-main #subscribe-us-area .subscribe form .input-textbox input:-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+.site-main #subscribe-us-area .subscribe form .input-textbox input::-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+.site-main #subscribe-us-area .subscribe form .input-textbox input::placeholder {
+  color: whitesmoke;
+}
+
+.site-main #subscribe-us-area .subscribe form .btn-submit button {
+  background: whitesmoke;
+  color: var(--primary-color2);
+  padding: .7rem 2rem;
+  float: right;
+  border: none;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.site-main #subscribe-us-area .subscribe form .btn-submit button:hover {
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+}
+
+/* End Subscribe Area */
+/* Footer Area */
+footer#footer-area {
+  padding: 5rem 0;
+  -webkit-animation: slide 40s ease infinite;
+          animation: slide 40s ease infinite;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+}
+
+footer#footer-area .social h5 {
+  font: normal 500 23px/30px var(--montserrat);
+}
+
+footer#footer-area .social a > i {
+  font-size: 25px;
+  padding: 2rem;
+  color: whitesmoke;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+footer#footer-area .social a:hover > i {
+  color: var(--primary-color);
+}
+
+footer#footer-area .copyright .para {
+  color: whitesmoke;
+}
+
+/* End Footer Area */
+/*# sourceMappingURL=style.css.map */
